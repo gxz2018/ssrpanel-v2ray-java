@@ -431,9 +431,8 @@ install_ssr(){
 
 open_bbr(){
 	cd
-	wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh
-    chmod +x bbr.sh
-    ./bbr.sh
+	wget -N --no-check-certificate "https://raw.githubusercontent.com/teddysun/across/refs/heads/master/bbr.sh"
+	bash bbr.sh
 
 }
 

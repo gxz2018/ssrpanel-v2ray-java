@@ -314,7 +314,7 @@ install_ssr(){
 	cd /usr/
 	rm -rf /usr/shadowsocksr
 	echo 'SSR下载中...'
-	git clone -b master https://github.com/fei5seven/shadowsocksr.git && cd shadowsocksr && bash initcfg.sh
+	git clone -b master https://github.com/gxz2018/shadowsocksr-backup.git && cd shadowsocksr-backup && bash initcfg.sh
 	pip install --upgrade setuptools &&	pip install -r requestment.txt
 	echo 'SSR安装完成'
 	echo '开始配置节点连接信息...'

@@ -431,8 +431,10 @@ install_ssr(){
 
 open_bbr(){
 	cd
-	wget -N --no-check-certificate "https://raw.githubusercontent.com/fei5seven/Shell-1/master/bbr_tcp_mod.sh"
-	bash bbr_tcp_mod.sh
+	wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh
+    chmod +x bbr.sh
+    ./bbr.sh
+
 }
 
 echo -e "1.Install V2Ray+Caddy"

@@ -315,7 +315,7 @@ install_ssr(){
 	rm -rf /usr/shadowsocksr
 	echo 'SSR下载中...'
 	git clone -b master https://github.com/gxz2018/shadowsocksr-backup.git && cd shadowsocksr-backup && bash initcfg.sh
-	pip install --upgrade setuptools &&	pip install -r requestment.txt
+	pip install --upgrade setuptools &&	pip install -r requirements.txt
 	echo 'SSR安装完成'
 	echo '开始配置节点连接信息...'
 	read -p "数据库服务器地址:" db_Host

@@ -74,8 +74,8 @@ config_v2ray_caddy() {
 		[ -z "$forward_Path" ] && forward_Path="game"
 	read -p "$(echo -e "$yellow V2Ray端口$none(不可80/443，默认：${cyan}10086$none)")：" v2ray_Port
 		[ -z "$v2ray_Port" ] && v2ray_Port="10086"
-	read -p "$(echo -e "$yellow V2Ray额外ID$none(默认：${cyan}16$none)")：" alter_Id
-		[ -z "$alter_Id" ] && alter_Id="16"
+	read -p "$(echo -e "$yellow V2Ray额外ID$none(默认：${cyan}4$none)")：" alter_Id
+		[ -z "$alter_Id" ] && alter_Id="4"
 	read -p "$(echo -e "$yellow配置同步端口$none(不可80/443，默认：${cyan}10087$none)")：" usersync_Port
 		[ -z "$usersync_Port" ] && usersync_Port="10087"
 	read -p "面板分配的节点ID，如 6 ：" node_Id

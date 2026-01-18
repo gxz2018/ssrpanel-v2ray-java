@@ -95,7 +95,7 @@ config_v2ray_caddy() {
 }
 
 config_v2ray() {
-	read -p "面板分配的节点ID，如 11 ：" node_Id
+	read -p "面板分配的节点ID，如 0 ：" node_Id
 	read -p "$(echo -e "$yellow V2Ray端口$none(不可80/443，默认：${cyan}10086$none)")：" v2ray_Port
 		[ -z "$v2ray_Port" ] && v2ray_Port="10086"
 	read -p "$(echo -e "$yellow配置同步端口$none(不可80/443，默认：${cyan}10087$none)")：" usersync_Port
